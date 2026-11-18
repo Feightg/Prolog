@@ -2,6 +2,7 @@
 % ==========================================================
 % PROYECTO FINAL LOGICA
 % Sistema de recomendacion de peliculas
+%               Universidad Vereacruzana
 % Hecho por:    Alfredo Zamorano Rodriguez
 %               Malillani flores Tejada
 %               Antonio 
@@ -17,7 +18,7 @@
 
 pregunta(genero,
     'Que genero de pelicula prefieres?',
-    [accion, ciencia_ficcion, terror, comedia, drama, animacion]).
+    [accion, ciencia_ficcion, terror, comedia, drama, animacion, romance]).
 
 pregunta(duracion,
     'Que duracion prefieres?',
@@ -25,14 +26,14 @@ pregunta(duracion,
 
 pregunta(epoca,
     'De que epoca prefieres la pelicula?',
-    [clasica, moderna, reciente, indiferente]).
+    [clasico, moderno, reciente, indiferente]).
 
 pregunta(tono,
     'Que ambiente buscas?',
-    [ligero, intenso, oscuro, emotivo]).
+    [ligero, familiar, oscuro, emotivo, intenso]).
 
 pregunta(animacion,
-    'Te gustan las peliculas animadas?',
+    'Te gustan las peliculas animadas stopmotion?',
     [si, no]).
 
 pregunta(saga,
@@ -45,7 +46,7 @@ pregunta(idioma,
 
 pregunta(ritmo,
     'Que ritmo prefieres?',
-    [rapido, tranquilo, confuso]).
+    [rapido, tranquilo, confuso, intenso]).
 
 
 % ==========================================================
@@ -133,13 +134,61 @@ obtener_respuestas(Respuestas) :-
 % una pelicula y una explicacion.
 
 recomendar(
-    [terror, _, _, oscuro, _, _, _, _],
+    [terror, media, moderna, oscuro, _, _, ingles, intenso],
     'Hereditary',
     'Elegiste terror y un ambiente oscuro. Esta pelicula destaca por su atmosfera inquietante.'
 ).
 
 recomendar(
-    [terror, larga, moderna, intenso, _, _, ingles, tranquilo],
+    [terror, corta, _, oscuro, _, _, _, tranquilo],
+    'the whitch',
+    'Un clasico del cine de terror, con una atmosfera perturbadora y un ritmo tranquilo que te mantendra en suspenso.'
+).
+
+recomendar(
+    [ciencia_ficcion, larga, moderna, intenso, _, _, ingles, confuso],
+    'Origen',
+    'Buscas ciencia ficcion intensa y con una historia larga. Esta pelicula combina accion y un argumento complejo.'
+).
+
+recomendar(
+    [accion, media, moderna, intenso, _, si, _, rapido],
+    'Avengers: Endgame',
+    'Buscas accion intensa y de saga. Esta pelicula ofrece un ritmo rapido y emocion constante.'
+).
+
+recomendar(
+    [comedia, corta, reciente, ligero, _, _, ingles, _],
+    'Deadpool',
+    'Buscas una comedia ligera y reciente. Esta pelicula combina humor oscuro y accion.'
+).
+
+recomendar(
+    [romance, larga, moderna, emotivo, _, _, _, tranquilo],
+    'La La Land',
+    'Buscas romance con una historia larga y emocional. Esta pelicula combina musica y drama con dos personajes con los que puedes identificarte.'
+).
+
+recomendar(
+    [drama, media, clasico, emotivo, _, _, _, tranquilo],
+    'Cadena de favores',
+    'Prefieres los dramas clasicos. Esta pelicula es una historia de crimen y familia.'
+).
+
+recomendar(
+    [animacion, media, clsica, oscuro, si, _, _, _],
+    'El extraño mundo de Jack',
+    'te gusta el stopmotion y esta pelicula combina animacion con un ambiente oscuro y una historia emotiva.'
+).
+
+recomendar(
+    [animacion, media, moderna, familiar, si, _, espanol, _],
+    'Klaus',
+    'Te gusta la animacion y un ambiente familiar, esta historia nos habla del verdadero significado de la navidad y la importancia de la amistad y la generosidad'
+).
+
+recomendar(
+    [terror, larga, moderna, intenso, _, _, ingles, intenso],
     'El conjuro 3',
     'Buscas terror intenso, con una historia larga y actual, en ingles, y esta pelicula ofrece una experiencia unica en su clase'
 ).
