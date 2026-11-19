@@ -133,6 +133,31 @@ obtener_respuestas(Respuestas) :-
 % Cada regla relaciona las preferencias del usuario con
 % una pelicula y una explicacion.
 
+
+recomendar(
+    [animacion, media, reciente, emotivo, si, no, ingles, tranquilo],
+    'Memorias de un caracol',
+    'Te gusta el stop-motion y buscas una historia reciente, emotiva y tranquila. Esta pelicula ofrece un relato profundo y conmovedor.'
+).
+
+recomendar(
+    [romance, media, clasico, ligero, _, no, ingles, rapido],
+    '10 cosas que odio de ti',
+    'Buscas un romance clasico y ligero. Esta pelicula combina comedia juvenil, sarcasmo y una historia de amor muy entretenida.'
+).
+
+recomendar(
+    [animacion, larga, clasico, emotivo, no, no, _, tranquilo],
+    'El castillo vagabundo',
+    'Buscas animacion clasica y emotiva con un ritmo tranquilo. Esta pelicula ofrece un mundo magico y una historia llena de fantasia.'
+).
+
+recomendar(
+    [ciencia_ficcion, larga, reciente, emotivo, no, no, ingles, confuso],
+    'Everything Everywhere All at Once',
+    'Buscas ciencia ficcion reciente con una trama compleja y emotiva. Esta pelicula mezcla accion frenetica, multiversos y una historia familiar conmovedora.'
+).
+
 recomendar(
     [terror, media, moderna, oscuro, _, _, ingles, intenso],
     'Hereditary',
@@ -141,7 +166,7 @@ recomendar(
 
 recomendar(
     [terror, corta, _, oscuro, _, _, _, tranquilo],
-    'the whitch',
+    'The Whitch',
     'Un clasico del cine de terror, con una atmosfera perturbadora y un ritmo tranquilo que te mantendra en suspenso.'
 ).
 
@@ -176,7 +201,7 @@ recomendar(
 ).
 
 recomendar(
-    [animacion, media, clsica, oscuro, si, _, _, _],
+    [animacion, media, clasico, oscuro, si, _, _, _],
     'El extraño mundo de Jack',
     'te gusta el stopmotion y esta pelicula combina animacion con un ambiente oscuro y una historia emotiva.'
 ).
@@ -230,16 +255,12 @@ recomendar(
 ).
 
 recomendar(
-    [drama, _, clasica, _, _, _, _, _],
+    [drama, _, clasico, _, _, _, _, _],
     'El padrino',
     'Prefieres los dramas clasicos. Esta pelicula es una historia de crimen y familia.'
 ).
 
-recomendar(
-    [ciencia_ficcion, _, _, _, _, _, _, _],
-    'Matrix',
-    'Te interesa la ciencia ficcion. Esta pelicula combina accion con ideas filosoficas.'
-).
+
 
 % Recomendaciones alternativas segun el genero.
 
@@ -271,6 +292,18 @@ recomendar(
     [animacion, _, _, _, _, _, _, _],
     'Shrek',
     'Te interesa la animacion. Esta pelicula combina humor y aventura.'
+).
+
+recomendar(
+    [romance, _, _, _, _, _, _, _],
+    'Titanic',
+    'Te interesa el romance. Esta pelicula ofrece una historia emotiva centrada en el amor.'
+).
+
+recomendar(
+    [ciencia_ficcion, _, _, _, _, _, _, _],
+    'Matrix',
+    'Te interesa la ciencia ficcion. Esta pelicula combina accion con ideas filosoficas.'
 ).
 
 % ==========================================================
