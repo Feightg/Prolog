@@ -4,7 +4,7 @@
 % Sistema de recomendacion de peliculas
 %               Universidad Veracruzana
 % Hecho por:    Alfredo Zamorano Rodriguez
-%               Malillani flores Tejada
+%               Malillani Flores Tejeda
 %               Jose Antonio Leyva Galindo
 %               Uzziel Aquino Ramos         
 % ==========================================================
