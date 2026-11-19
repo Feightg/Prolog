@@ -2,11 +2,11 @@
 % ==========================================================
 % PROYECTO FINAL LOGICA
 % Sistema de recomendacion de peliculas
-%               Universidad Vereacruzana
+%               Universidad Veracruzana
 % Hecho por:    Alfredo Zamorano Rodriguez
 %               Malillani flores Tejada
-%               Antonio 
-%               Uzziel           
+%               Jose Antonio Leyva Galindo
+%               Uzziel Aquino Ramos         
 % ==========================================================
 :- use_module(library(readutil)).   
 % ==========================================================
@@ -159,45 +159,51 @@ recomendar(
 ).
 
 recomendar(
-    [terror, media, moderna, oscuro, _, _, ingles, intenso],
+    [ciencia_ficcion, larga, moderno, emotivo, no, no, ingles, confuso],
+    'Interestelar',
+    'Buscas ciencia ficcion, una historia larga y emotiva. Esta pelicula combina exploracion espacial y drama.'
+).
+
+recomendar(
+    [terror, media, moderno, oscuro, _, _, ingles, intenso],
     'Hereditary',
     'Elegiste terror y un ambiente oscuro. Esta pelicula destaca por su atmosfera inquietante.'
 ).
 
 recomendar(
-    [terror, corta, _, oscuro, _, _, _, tranquilo],
+    [terror, media, _, oscuro, no, no, ingles, tranquilo],
     'The Whitch',
     'Un clasico del cine de terror, con una atmosfera perturbadora y un ritmo tranquilo que te mantendra en suspenso.'
 ).
 
 recomendar(
-    [ciencia_ficcion, larga, moderna, intenso, _, _, ingles, confuso],
+    [ciencia_ficcion, larga, moderno, intenso, _, _, ingles, confuso],
     'Origen',
     'Buscas ciencia ficcion intensa y con una historia larga. Esta pelicula combina accion y un argumento complejo.'
 ).
 
 recomendar(
-    [accion, media, moderna, intenso, _, si, _, rapido],
+    [accion, media, moderno, intenso, _, si, _, rapido],
     'Avengers: Endgame',
     'Buscas accion intensa y de saga. Esta pelicula ofrece un ritmo rapido y emocion constante.'
 ).
 
 recomendar(
-    [comedia, corta, reciente, ligero, _, _, ingles, _],
+    [comedia, media, moderno, ligero, no, si, ingles, rapido],
     'Deadpool',
     'Buscas una comedia ligera y reciente. Esta pelicula combina humor oscuro y accion.'
 ).
 
 recomendar(
-    [romance, larga, moderna, emotivo, _, _, _, tranquilo],
+    [romance, larga, moderno, emotivo, _, _, _, tranquilo],
     'La La Land',
     'Buscas romance con una historia larga y emocional. Esta pelicula combina musica y drama con dos personajes con los que puedes identificarte.'
 ).
 
 recomendar(
-    [drama, media, clasico, emotivo, _, _, _, tranquilo],
+    [drama, media, moderno, emotivo, no, no, _, tranquilo],
     'Cadena de favores',
-    'Prefieres los dramas clasicos. Esta pelicula es una historia de crimen y familia.'
+    'Buscas un drama moderno y emotivo. Esta pelicula cuenta una historia conmovedora sobre como una buena accion puede cambiar muchas vidas.'
 ).
 
 recomendar(
@@ -207,21 +213,15 @@ recomendar(
 ).
 
 recomendar(
-    [animacion, media, moderna, familiar, si, _, espanol, _],
+    [animacion, media, moderno, familiar, no, no, espanol, _],
     'Klaus',
     'Te gusta la animacion y un ambiente familiar, esta historia nos habla del verdadero significado de la navidad y la importancia de la amistad y la generosidad'
 ).
 
 recomendar(
-    [terror, larga, moderna, intenso, _, _, ingles, intenso],
+    [terror, larga, moderno, intenso, _, _, ingles, intenso],
     'El conjuro 3',
     'Buscas terror intenso, con una historia larga y actual, en ingles, y esta pelicula ofrece una experiencia unica en su clase'
-).
-
-recomendar(
-    [ciencia_ficcion, larga, moderna, intenso, _, _, ingles, confuso],
-    'Interestelar',
-    'Buscas ciencia ficcion, una historia larga e intensa. Esta pelicula combina exploracion espacial y drama.'
 ).
 
 recomendar(
@@ -243,13 +243,13 @@ recomendar(
 ).
 
 recomendar(
-    [animacion, _, _, _, si, _, espanol, _],
+    [animacion, _, _, _, no, no, espanol, _],
     'Coco',
     'Te gusta la animacion y prefieres el español. Esta pelicula combina musica, familia y emocion.'
 ).
 
 recomendar(
-    [animacion, _, _, _, si, _, _, _],
+    [animacion, _, _, _, no, si, _, _],
     'Spider-Man: Un nuevo universo',
     'Te gustan las peliculas animadas. Esta pelicula destaca por su estilo visual y accion.'
 ).
