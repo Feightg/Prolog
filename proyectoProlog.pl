@@ -260,7 +260,35 @@ recomendar(
     'Prefieres los dramas clasicos. Esta pelicula es una historia de crimen y familia.'
 ).
 
+recomendar(
+    [animacion, media, moderno, emotivo, no, si, _, _,],
+    'Jujutsu Kaisen 0',
+    'Te gustan peliculas animadas que te hagan sentir que estas dentro de los zapatos de los personajes, mientras te cuenta una historia que puede seguir extendiendose en proyectos posteriores.'
+    ).
+    
+recomendar(
+    [ciencia_ficcion, larga, clasico, _, no, si, _, tranquilo,],
+    'Star Wars Episodio IV',
+    'Prefieres sagas clasicas de ciencia ficcion, que no te sobreestimulen y te dejen apreciar cada detalle que contiene.'
+    ).
 
+recomendar(
+    [animacion, media, moderno, oscuro, si, no, _, _,],
+    'El cadaver de la novia',
+    'Eres una persona que aprecia los detalles del stop motion junto con la atmosfera caracteristica de Tim Burton, con historias cortas pero profundas.'
+    ).
+
+recomendar(
+    [terror, larga, clasico, oscuro, no, no, _, _,],
+    'El exorcismo de Emily Rose',
+    'Quieres una pelicula de terror y oscura, que te genere sensaciones extrañas de querer y a la vez no querer apartar la vista de la pantalla',
+    ).
+
+recomendar(
+    [terror, media, clasico, intenso, no, no, _, _,],
+    'El proyecto de la bruja de Blair',
+    'Te gustan las peliculas de te hagan sentir lo mismo que los protagonistas en todo momento, dejandote la misma sensacion de tension'
+    ).
 
 % Recomendaciones alternativas segun el genero.
 
